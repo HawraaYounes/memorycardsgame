@@ -50,3 +50,6 @@
     transform: rotateY(180deg);
     pointer-events: none;
   }
+  .memory-game-blocks .game-block.has-match{
+    visibility: hidden;
+  }
