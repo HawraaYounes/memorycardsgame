@@ -12,9 +12,11 @@ blocks.forEach((block, index) => {
 
 });
 
-
-
-
+function flipBlock(selectedBlock) {
+    selectedBlock.classList.add('is-flipped');
+  
+  }
+  
 function shuffle(array) {
     let current = array.length,temp,random;
     while (current > 0) {
