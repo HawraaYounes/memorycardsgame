@@ -14,6 +14,20 @@ blocks.forEach((block, index) => {
 
 function flipBlock(selectedBlock) {
     selectedBlock.classList.add('is-flipped');
+    let allFlippedBlocks = blocks.filter(flippedBlock => flippedBlock.classList.contains('is-flipped'));
+    if (allFlippedBlocks.length === 2) {
+      stopClicking();
+      checkMatchedBlocks(allFlippedBlocks[0], allFlippedBlocks[1]);
+  
+    }
+  
+  }
+  function stopClicking() {
+    blocksContainer.classList.add('no-clicking');
+    setTimeout(() => {
+      blocksContainer.classList.remove('no-clicking');
+  
+    }, duration);
   
   }
   
