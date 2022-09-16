@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+    <div class="info-container">
+      <div class="name">
+        Hello: <span></span>
+      </div>
+      <div class="tries">
+        Wrong Tries: <span>0</span>
+      </div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="C">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/c-card.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/c-card.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html-card.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html-card.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/python-card.jpg" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/python-card.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
